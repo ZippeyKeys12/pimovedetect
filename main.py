@@ -91,7 +91,7 @@ try:
 
         if len(RECTS) > 0:
             # Target coordinate
-            target = get_center(sorted(RECTS, key=get_magnitude)[-1])
+            target = get_center(sorted(RECTS, key=get_magnitude)[0])
 
             yaw = target[0] - CENTER[0]
             pitch = target[1] - CENTER[1]
